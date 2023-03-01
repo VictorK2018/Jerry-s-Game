@@ -1,4 +1,7 @@
-import pygame, classBaloon
+
+import classBaloon
+import pygame
+
 pygame.init()
 
 
@@ -12,7 +15,7 @@ class Game():
 
 
         self.over = False
-        self.display = pygame.display.set_mode((1920, 1080), pygame.FULLSCREEN)
+        self.display = pygame.display.set_mode((1280, 720), pygame.RESIZABLE )
         self.background = pygame.image.load('backgroundsky.jpg')
 
         self.group = pygame.sprite.LayeredUpdates()

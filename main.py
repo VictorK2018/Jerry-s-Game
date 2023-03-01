@@ -1,5 +1,6 @@
-import pygame, classGame, classBaloon
 
+import classGame
+import pygame
 
 game = classGame.Game()
 
