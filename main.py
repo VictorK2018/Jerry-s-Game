@@ -10,6 +10,7 @@ pygame.time.set_timer(TIMESPEED, 7000)
 
 
 
+
 while not game.over:
     for e in pygame.event.get():
         if e.type == pygame.QUIT:
