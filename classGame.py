@@ -1,28 +1,24 @@
-
 import classBaloon
 import pygame
 
 pygame.init()
 
 
-class Game():
+class Game:
     def __init__(self):
-        self.font = pygame.font.SysFont('DOCKER THREE', 40)
-
+        self.font = pygame.font.SysFont("DOCKER THREE", 40)
 
         self.FPS = 30
         self.clock = pygame.time.Clock()
 
-
         self.over = False
-        self.display = pygame.display.set_mode((1280, 720), pygame.RESIZABLE )
-        self.background = pygame.image.load('backgroundsky.jpg')
+        self.display = pygame.display.set_mode((1280, 720), pygame.RESIZABLE)
+        self.background = pygame.image.load("backgroundsky.jpg")
 
         self.group = pygame.sprite.LayeredUpdates()
         self.speed = 7
 
     def update(self):
-
         self.clock.tick(self.FPS)
         self.display.blit(self.background, (0, 0))
         self.group.draw(self.display)
@@ -44,4 +40,3 @@ class Game():
 
     def speedup(self):
         self.speed += 2
-

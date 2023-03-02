@@ -1,4 +1,3 @@
-
 import classGame
 import pygame
 
@@ -7,9 +6,6 @@ game = classGame.Game()
 pygame.time.set_timer(pygame.USEREVENT, 400)
 TIMESPEED = pygame.USEREVENT + 1
 pygame.time.set_timer(TIMESPEED, 7000)
-
-
-
 
 
 while not game.over:
